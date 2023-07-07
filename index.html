@@ -1,19 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport News</title>
-</head>
-<body >
-    <h1 style="text-align: center;">Sport News</h1>
-    <ol style="list-style: none; " >
-        <li>Новина №1</li>
-        <li>Новина№2</li>
-        <li>Новина№3</li>
-        <li>Новина№4</li>
-       
-    </ol>
-</body>
-</html>
+<form class="form" name = "form1">
+                    
+                    <!-- This input box shows the button pressed by the user in calculator. -->
+                    <input  id = "calc" type ="text" name = "answer"> <br> <br>
+                    <!-- Display the calculator button on the screen. -->
+                    <!-- onclick() function display the number prsses by the user. -->
+                   
+                     <input  type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+                    <br> <br>
+                    
+                   
+                    <input   type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+                    <br> <br>
+                   
+                    <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+                    <br> <br>
+                    
+                    
+                    <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+                   
+                      <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+                    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+                    <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+                    <br> 
+                    <!-- Display the Cancel button and erase all data entered by the user. -->
+                    <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >
+                    <br> 
+                    
+                  </form>
+
+
